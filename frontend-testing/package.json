@@ -4,15 +4,17 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "cypress:open":"cypress open",
-        "cypress:run":"cypress run",
-        "test": "echo \"Error: no test specified\" && exit 1"
-      },
-      "keywords": [],
-      "author": "",
-      "license": "ISC",
-      "devDependencies": {
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "test:vrt": "percy exec cypress run --spec cypress/integration/general.spec.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@percy/cli": "^1.0.0-beta.70",
+        "@percy/cypress": "^3.1.1",
         "cypress": "^8.7.0"
-      }
     }
-  
+}
