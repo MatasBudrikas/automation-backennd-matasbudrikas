@@ -1,4 +1,3 @@
-import '@percy/cypress'
 // ***********************************************************
 // This example support/index.js is processed and
 // loaded automatically before your test files.
@@ -16,6 +15,6 @@ import '@percy/cypress'
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-
+import '@percy/cypress'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

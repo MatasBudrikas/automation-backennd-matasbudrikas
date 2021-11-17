@@ -5,9 +5,8 @@
     "main": "index.js",
     "scripts": {
         "cypress:open": "cypress open",
-        "cypress:run": "cypress run",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "test:vrt": "percy exec cypress run --spec cypress/integration/general.spec.js"
+        "cypress:run": "cypress run --spec cypress/integration/general-regression-testing.spec.js",
+        "test:vrt": "percy exec cypress run --spec cypress/integration/visual-regression-testing.spec.js"
     },
     "keywords": [],
     "author": "",
@@ -16,5 +15,8 @@
         "@percy/cli": "^1.0.0-beta.70",
         "@percy/cypress": "^3.1.1",
         "cypress": "^8.7.0"
+    },
+    "dependencies": {
+        "percy": "^0.28.6"
     }
 }
